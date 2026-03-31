@@ -1,0 +1,16 @@
+# English translations for hanoi
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "  Towers of Hanoi — {n} discs"
+msgstr "  Towers of Hanoi — {n} discs"
+
+msgid "  Step {step}/{total}"
+msgstr "  Step {step}/{total}"
+
+msgid "  >  Disc {d}: {o} -> {t}"
+msgstr "  >  Disc {d}: {o} -> {t}"
+
+msgid "  Solved in {n} moves!\n"
+msgstr "  Solved in {n} moves!\n"

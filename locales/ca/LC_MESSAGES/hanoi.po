@@ -1,0 +1,16 @@
+# Catalan translations for hanoi
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "  Towers of Hanoi — {n} discs"
+msgstr "  Torres de Hanoi — {n} discos"
+
+msgid "  Step {step}/{total}"
+msgstr "  Pas {step}/{total}"
+
+msgid "  >  Disc {d}: {o} -> {t}"
+msgstr "  >  Disc {d}: {o} -> {t}"
+
+msgid "  Solved in {n} moves!\n"
+msgstr "  Resolt en {n} moviments!\n"
