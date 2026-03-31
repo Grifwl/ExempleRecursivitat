@@ -125,17 +125,20 @@ class ASCIIVisualiser(TowerVisualiser):
         return f"{code}{text}{self._RESET}" if self.__colours else text
 
     def __disc_width(self, disc: int) -> int:
-        """Computes the display width for a disc, always odd.
+        """Computes the display width for a disc, always odd and always unique.
+
+        Uses the formula disc * 2 + 1, which maps disc sizes to consecutive
+        odd numbers accounting for the two parentheses in the visual representation:
+        disc 1 → 3 '(=)', disc 2 → 5 '(===)', disc 3 → 7 '(=====)', etc.
 
         Args:
             disc: Disc size value.
 
         Returns:
-            Odd integer width proportional to the disc size.
+            Odd integer width including the two surrounding parentheses,
+            guaranteed unique for each disc size.
         """
-        span = self._MAX_DISC_WIDTH - self._MIN_DISC_WIDTH
-        w = self._MIN_DISC_WIDTH + round(span * (disc - 1) / max(self.__n - 1, 1))
-        return w if w % 2 == 1 else w + 1
+        return disc * 2 + 1
 
     def __disc_row(self, disc: int) -> str:
         """Builds the ASCII string for a single disc row.
