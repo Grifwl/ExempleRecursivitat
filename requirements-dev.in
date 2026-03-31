@@ -1,0 +1,4 @@
+-r requirements.in
+babel
+pip-tools
+pytest
